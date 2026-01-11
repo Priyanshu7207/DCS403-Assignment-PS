@@ -1,1 +1,1 @@
-This contains my DCS403 Assignments
+This repo contains my DCS403 Assignments
