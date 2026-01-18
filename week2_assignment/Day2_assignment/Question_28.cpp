@@ -1,4 +1,4 @@
-// Week-2 Assignment
+// Week-2 Assignment - Day 2
 #include <iostream>
 #include <iomanip>
 using namespace std;
