@@ -4,13 +4,18 @@ using namespace std;
 
 int main() {
     string str;
+    cout << "Enter a string: ";
     getline(cin, str);
 
-    for (int i = 0; i < str.length(); i++) {
-        if (i % 2 == 1)
-            str[i] = toupper(str[i]);
-        else
-            str[i] = tolower(str[i]);
+    int index = 0;
+    for (char &ch : str) {
+        if (isalpha(ch)) {
+            if (index % 2 == 0)
+                ch = tolower(ch);
+            else
+                ch = toupper(ch);
+            index++;
+        }
     }
 
     cout << str;

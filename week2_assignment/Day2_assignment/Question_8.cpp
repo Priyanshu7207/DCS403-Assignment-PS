@@ -3,11 +3,15 @@
 using namespace std;
 
 int main() {
-    double angle = M_PI / 4;   // π/4 radians
+    double degree;
+    cout << "Enter angle in degrees: ";
+    cin >> degree;
 
-    cout << "sin(45°) = " << sin(angle) << endl;
-    cout << "cos(45°) = " << cos(angle) << endl;
-    cout << "tan(45°) = " << tan(angle) << endl;
+    double radian = degree * acos(-1) / 180;
+
+    cout << "sin(" << degree << "°) = " << sin(radian) << endl;
+    cout << "cos(" << degree << "°) = " << cos(radian) << endl;
+    cout << "tan(" << degree << "°) = " << tan(radian) << endl;
 
     return 0;
 }
