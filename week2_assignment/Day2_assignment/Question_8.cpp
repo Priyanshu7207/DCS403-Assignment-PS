@@ -2,17 +2,15 @@
 #include <cmath>
 using namespace std;
 
-int main() 
-{
-    double degree;
-    cout << "Enter angle in degrees: ";
-    cin >> degree;
+int main() {
+    double angle;
 
-    double radian = degree * acos(-1) / 180;
+    cout << "Enter angle in radians: ";
+    cin >> angle;
 
-    cout << "sin(" << degree << "°) = " << sin(radian) << endl;
-    cout << "cos(" << degree << "°) = " << cos(radian) << endl;
-    cout << "tan(" << degree << "°) = " << tan(radian) << endl;
+    cout << "sin = " << sin(angle) << endl;
+    cout << "cos = " << cos(angle) << endl;
+    cout << "tan = " << tan(angle) << endl;
 
     return 0;
 }

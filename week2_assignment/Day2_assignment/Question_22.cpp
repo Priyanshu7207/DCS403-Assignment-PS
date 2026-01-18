@@ -3,13 +3,13 @@
 using namespace std;
 
 int main() {
-    string str;
+    string str, word;
+    int count = 0;
+
+    cout << "Enter a sentence: ";
     getline(cin, str);
 
     stringstream ss(str);
-    string word;
-    int count = 0;
-
     while (ss >> word)
         count++;
 

@@ -4,9 +4,10 @@ using namespace std;
 
 int main() {
     string str;
-    getline(cin, str);
-
     int vowels = 0, consonants = 0;
+
+    cout << "Enter a string: ";
+    getline(cin, str);
 
     for (char ch : str) {
         ch = tolower(ch);

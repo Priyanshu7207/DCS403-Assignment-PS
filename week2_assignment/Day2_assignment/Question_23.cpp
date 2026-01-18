@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
-    string str, word, longest="";
+    string str, word, longest = "";
+
+    cout << "Enter a sentence: ";
     getline(cin, str);
 
     stringstream ss(str);
