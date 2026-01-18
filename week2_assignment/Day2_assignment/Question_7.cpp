@@ -2,7 +2,8 @@
 #include <cmath>
 using namespace std;
 
-int main() {
+int main() 
+{
     double num, base, exponent;
 
     cout << "Enter a number: ";

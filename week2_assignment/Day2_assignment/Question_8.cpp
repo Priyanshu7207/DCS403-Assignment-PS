@@ -2,7 +2,8 @@
 #include <cmath>
 using namespace std;
 
-int main() {
+int main() 
+{
     double degree;
     cout << "Enter angle in degrees: ";
     cin >> degree;

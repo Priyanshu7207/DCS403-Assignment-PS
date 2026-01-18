@@ -3,7 +3,8 @@
 #include <cctype>
 using namespace std;
 
-int main() {
+int main() 
+{
     string a, b;
     cout << "Enter first string: ";
     cin >> a;
