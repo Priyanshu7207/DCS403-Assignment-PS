@@ -3,11 +3,17 @@
 using namespace std;
 
 int main() {
-    int num = -9;
+    double num, base, exponent;
 
-    cout << "Square root of 9 = " << sqrt(9) << endl;
-    cout << "2 raised to power 3 = " << pow(2, 3) << endl;
-    cout << "Absolute value of -9 = " << fabs(num) << endl;
+    cout << "Enter a number: ";
+    cin >> num;
+
+    cout << "Enter base and exponent: ";
+    cin >> base >> exponent;
+
+    cout << "Square root of " << fabs(num) << " = " << sqrt(fabs(num)) << endl;
+    cout << base << " raised to power " << exponent << " = " << pow(base, exponent) << endl;
+    cout << "Absolute value of " << num << " = " << fabs(num) << endl;
 
     return 0;
 }
