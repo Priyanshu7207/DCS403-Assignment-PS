@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a[3][3];
+
+    cout << "Enter 9 elements for 3x3 matrix:\n";
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            cin >> a[i][j];
+
+    bool symmetric = true;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (a[i][j] != a[j][i]) {
+                symmetric = false;
+                break;
+            }
+        }
+        if (!symmetric) break;
+    }
+
+    if (symmetric)
+        cout << "Matrix is Symmetric" << endl;
+    else
+        cout << "Matrix is Not Symmetric" << endl;
+
+    return 0;
+}
